@@ -11,7 +11,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS web_historian.visits_orig
     properties struct<
         id: string,
         url: string,
-        properties_date: decimal(16,4),
+        properties_date: decimal(19,4),
         title: string,
         domain: string,
         visitId: string,
@@ -23,7 +23,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS web_historian.visits_orig
             source: string,
             generator: string,
             generator_id: string,
-            pdk_timestamp: decimal(16,7),
+            pdk_timestamp: decimal(19,7),
             encrypted_transmission: boolean
         >
     >,
